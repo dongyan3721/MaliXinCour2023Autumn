@@ -12,10 +12,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class RegexUtil {
-    private final static Pattern matchAlias = Pattern.compile("\"alias\": \"(.+?)\"");
-    private final static Pattern matchPictureUrl = Pattern.compile("\"picuser\": \"(.+?)\"");
-    private final static Pattern matchPreviewPictureUrl = Pattern.compile("\"picurl\": \"(.+?)\"");
-    private final static Pattern matchContentUrl = Pattern.compile("\"playurl\": \"(.+?)\"");
+    private final static Pattern matchAlias = Pattern.compile("\"alias\":\"(.+?)\"");
+    private final static Pattern matchPictureUrl = Pattern.compile("\"picuser\":\"(.+?)\"");
+    private final static Pattern matchPreviewPictureUrl = Pattern.compile("\"picurl\":\"(.+?)\"");
+    private final static Pattern matchContentUrl = Pattern.compile("\"playurl\":\"(.+?)\"");
 
     public static ArrayList<String> getAlias(String s){
         ArrayList<String> ret = new ArrayList<>();
